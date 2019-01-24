@@ -10,20 +10,50 @@ body{
     background: url(../../psd/happy\ child.jpg);
     display: grid;
     grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 90vh 10vh;
+    grid-template-rows: 60vh 30vh 10vh 10vh;
     grid-template-areas: 
     "svart hjul svart2"
-    "footer footer footer";
+    "svart text svart2"
+    "footer footer footer"
+    "minifooter minifooter minifooter";
 }
 
 .hjul{
     grid-area: hjul;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
 }
 
 .hjul img:nth-child(1){
     height: 200px;
     width: 200px;
-    position: fixed;
+}
+
+.text{
+    grid-area: text;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    color: blue;
+    z-index: 50;
+}
+
+a{
+    text-decoration: none;
+}
+a:link{
+    color: white;
+}
+
+a:visited{
+    color: white;
+}
+
+a:active{
+    color: greenyellow;
 }
 
 .svart{
@@ -45,3 +75,15 @@ footer{
     display: flex;
     justify-content: center;
 }
+
+.minifooter{
+    width: auto;
+    height: auto;
+    grid-area: minifooter;
+    z-index: 100;
+    color: red;
+    display: flex;
+    justify-content: center;
+}
+
+
