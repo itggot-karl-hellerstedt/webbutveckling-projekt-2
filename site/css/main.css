@@ -7,13 +7,14 @@ body{
 .wrapper{
     height: 110vh;
     width: 100vw;
-    background: url(../../psd/happy\ childbig.jpg);
+    background: url(../img/happy\ childbigmobile.jpg);
     background-size: auto;
     display: grid;
     grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 60vh 30vh 10vh 10vh;
+    grid-template-rows: 60vh 10vh 20vh 10vh 10vh;
     grid-template-areas: 
     "svart hjul svart2"
+    "svart door svart2"
     "svart text svart2"
     "footer footer footer"
     "minifooter minifooter minifooter";
@@ -32,20 +33,29 @@ body{
     width: 200px;
 }
 
-.text{
-    grid-area: text;
+.door{
+    grid-area: door;
     height: auto;
     width: auto;
     display: flex;
     justify-content: center;
-    color: blue;
     z-index: 50;
+    font-family: Helvetica;
 }
 
-.text img:nth-child(1){
+.door img:nth-child(1){
     height: 50px;
     width: 50px;
     display: flex;
+}
+.text{
+    height: auto;
+    width: auto;
+    grid-area: text;
+    display: flex;
+    justify-content: center;
+    font-family: Helvetica;
+    color: white;
 }
 
 a{
@@ -81,6 +91,9 @@ footer{
     color: red;
     display: flex;
     justify-content: center;
+    font-family: Helvetica;
+    animation-name: footer;
+    animation-duration: 4s;
 }
 
 .minifooter{
@@ -91,6 +104,20 @@ footer{
     color: red;
     display: flex;
     justify-content: center;
+    font-family: Helvetica;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
+/* för desktop */
+@media only screen and (min-width: 800px){
+    .wrapper{
+        background: url(../img/happy\ childbig.jpg) 
+    }
+    
+}
 
+@keyframes footer{
+    0%{background-color: black;}
+    100%{background-color: red;}
+}
