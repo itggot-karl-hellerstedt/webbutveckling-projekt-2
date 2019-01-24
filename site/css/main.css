@@ -84,8 +84,8 @@ a:active{
 
 footer{
     background-color: black;
-    width: 100vw;
-    height: 20vh;
+    width: auto;
+    height: auto;
     grid-area: footer;
     z-index: 100;
     color: red;
@@ -93,23 +93,36 @@ footer{
     justify-content: center;
     font-family: Helvetica;
     animation-name: footer;
-    animation-duration: 4s;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 .minifooter{
     width: auto;
     height: auto;
     grid-area: minifooter;
+    background: black;
     z-index: 100;
     color: red;
     display: flex;
     justify-content: center;
     font-family: Helvetica;
-    margin-left: 5px;
-    margin-right: 5px;
 }
 
-/* för desktop */
+/* -----------------ABOUT---------------- */
+
+body{
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+}
+
+.wrapper_about{
+
+}
+
+/* ----------------DESKTOP---------------- */
 @media only screen and (min-width: 800px){
     .wrapper{
         background: url(../img/happy\ childbig.jpg) 
