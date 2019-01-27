@@ -1,0 +1,70 @@
+
+.body_about{
+    margin: 0px;
+    height: 150vh;
+    width: 100vw;
+}
+
+.wrapper_about{
+    height: 150vh;
+    width: 100vw;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh;
+    grid-template-areas: 
+    "help help help"
+    "text_about1 text_about1 text_about1"
+    "text_about1 text_about1 text_about1"
+    "text_about1 text_about1 text_about1"
+    "text_about2 text_about2 text_about2"
+    "text_about2 text_about2 text_about2"
+    "text_about2 text_about2 text_about2"
+    "text_about3 text_about3 text_about3"
+    "text_about3 text_about3 text_about3"
+    "text_about3 text_about3 text_about3";
+    font-family: Helvetica;
+    color: red;
+}
+
+.help{
+    grid-area: help;
+    height: auto;
+    width: auto;
+}
+
+.text_about1{
+    grid-area: text_about1;
+    height: auto;
+    width: auto;
+}
+
+.rubrik_about1{
+    grid-area: rubrik1;
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.paragraph_about1{
+    grid-area: paragraph1;
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    justify-content: last baseline;
+
+}
+
+.text_about2{
+    grid-area: text_about2;
+    height: auto;
+    width: auto;
+}
+
+.text_about3{
+    grid-area: text_about3;
+    height: auto;
+    width: auto;
+}
