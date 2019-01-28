@@ -105,7 +105,7 @@ a:active{
 
 footer{
     background-color: black;
-    color: red;
+    color: crimson;
 
     width: auto;
     height: auto;
@@ -132,7 +132,7 @@ footer{
     grid-area: minifooter;
 
     background: black;
-    color: red;
+    color: crimson;
 
     z-index: 100;
 
@@ -190,21 +190,32 @@ main{
 }
 
 .infotext1{
-    color: red;
+    color: crimson;
     height: 100%;
-    background-color: orange;
+    background-color: whitesmoke;
+}
+
+.infotext1 img:nth-child(3){
+    position: absolute;
+    padding: 50px 0px 0px 250px;
 }
 
 .infotext2{
-    color: blue;
+    color: crimson;
     height: 100%;
-    background-color: blueviolet;
+    background-color: whitesmoke;
 }
 
 .infotext3{
-    color: pink;
+    color: crimson;
     height: 100%;
-    background-color: aqua;
+    background-color: whitesmoke;
+}
+
+.infotext4{
+    color: crimson;
+    height: 100%;
+    background-color: whitesmoke;
 }
 
 .hest{
@@ -252,6 +263,21 @@ main{
     font-family: Helvetica, sans-serif;
 }
 
+.hyst{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px;
+    font-family: Helvetica, sans-serif;
+}
+
+.hysttext{
+    display: flex;
+    justify-content: center;
+    padding: 0px 20px 0px 20px;
+    font-family: Helvetica, sans-serif;
+}
+
 .meny-item{
     background: whitesmoke;
 
@@ -286,6 +312,7 @@ main{
 
 .meny-item label{
     padding-left: 40px;
+
     font-family: Helvetica;
 }
 
@@ -295,6 +322,7 @@ main{
 
 .meny-item:hover span{
     max-width: 100px;
+
     padding: 0 10px 0 10px;
 }
 
