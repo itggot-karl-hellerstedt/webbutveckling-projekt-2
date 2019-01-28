@@ -170,6 +170,7 @@ meny{
 main{
     grid-area: content;
     background: whitesmoke;
+    overflow: hidden;
 }
 
 .meny-lista{
@@ -181,6 +182,74 @@ main{
 .meny-lista li:nth-child(5){
     margin-top: 250px;
     background: crimson;
+}
+
+
+.dis{
+    display: none;
+}
+
+.infotext1{
+    color: red;
+    height: 100%;
+    background-color: orange;
+}
+
+.infotext2{
+    color: blue;
+    height: 100%;
+    background-color: blueviolet;
+}
+
+.infotext3{
+    color: pink;
+    height: 100%;
+    background-color: aqua;
+}
+
+.hest{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px;
+    font-family: Helvetica, sans-serif;
+}
+
+.hesttext{
+    display: flex;
+    justify-content: center;
+    padding: 0px 20px 0px 20px;
+    font-family: Helvetica, sans-serif;
+}
+
+.häst{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px;
+    font-family: Helvetica, sans-serif;
+}
+
+.hästtext{
+    display: flex;
+    justify-content: center;
+    padding: 0px 20px 0px 20px;
+    font-family: Helvetica, sans-serif;
+}
+
+.hast{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px;
+    font-family: Helvetica, sans-serif;
+}
+
+.hasttext{
+    display: flex;
+    justify-content: center;
+    padding: 0px 20px 0px 20px;
+    font-family: Helvetica, sans-serif;
 }
 
 .meny-item{
