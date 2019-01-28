@@ -19,6 +19,6 @@ function visaHjulfyra(event){
 }
 
 function visaHjulfem(event){
-    let dis = document.querySelector("#ostronkorvXXXX")
+    let dis = document.querySelector("#ostronkorvXXXXX")
     dis.classList.toggle("dis")
 }
